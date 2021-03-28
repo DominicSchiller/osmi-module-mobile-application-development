@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:layout_marginRight="3dp"
+                    android:padding="12dp"
+                    app:srcCompat="@drawable/ic_edit"
+                    android:background="@color/colorPrimary"
+                    app:tint="@color/colorAccent" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilItemTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight=".85"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColorHint="@color/textPrimary"
+                    app:hintTextAppearance="@style/EditTextFloatingHint"
+                    app:hintAnimationEnabled="false">
+
+                    <EditText
+                        android:id="@+id/titleInputField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="Titel"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="@color/textPrimary" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:layout_marginRight="3dp"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_description"
+                    android:background="@color/gray90"
+                    app:tint="@color/textPrimary" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilItemDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".85"
+                    android:padding="10dp"
+                    android:background="@color/gray90"
+                    android:textColorHint="@color/textPrimary"
+                    app:hintTextAppearance="@style/EditTextFloatingHint"
+                    app:hintAnimationEnabled="false">
+
+                    <EditText
+                        android:id="@+id/descriptionInputField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="Beschreibung"
+                        android:maxLines="10"
+                        android:textColor="@color/textPrimary" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:layout_marginRight="3dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_priority_none"
+                    android:background="@color/gray90"
+                    app:tint="@color/textPrimary" />
+
+                <Spinner
+                    android:id="@+id/prioritySpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="78dp"
+                    android:layout_weight=".85"
+                    android:background="@color/gray90"
+                    android:focusableInTouchMode="true"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".15"
+                    android:layout_marginRight="5dp"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_date"
+                    android:background="@color/gray90"
+                    app:tint="@color/textPrimary" />
+
+                <Button
+                    android:id="@+id/getDateButton"
+                    android:layout_width="0dp"
+                    android:layout_height="78dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".40"
+                    android:background="@color/gray90"
+                    android:clickable="true"
+                    android:elevation="0dp"
+                    android:text="Datum wählen" />
+
+                <Button
+                    android:id="@+id/getTimeButton"
+                    android:layout_width="0dp"
+                    android:layout_height="78dp"
+                    android:layout_weight=".40"
+                    android:background="@color/gray90"
+                    android:elevation="0dp"
+                    android:text="Uhrzeit wählen" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_contacts"
+                android:background="@color/gray90"
+                app:tint="@color/textPrimary" />
+
+            <Button
+                android:id="@+id/pickContactButton"
+                android:layout_width="0dp"
+                android:layout_height="78dp"
+                android:layout_weight=".85"
+                android:background="@color/gray90"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:text="Kontakt hinzufügen" />
+        </LinearLayout>
+
+            <GridView
+                android:id="@+id/contactsGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="86dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="1dp"
+                android:gravity="center"
+                android:stretchMode="columnWidth">
+            </GridView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

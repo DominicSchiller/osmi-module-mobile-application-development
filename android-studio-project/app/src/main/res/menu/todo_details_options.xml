@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.overview.TodoListActivity" >
+    <item
+        android:id="@+id/optionEdit"
+        android:checkable="false"
+        android:enabled="true"
+        android:icon="@drawable/ic_edit"
+        android:title="Bearbeiten"
+        android:visible="true"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/optionDelete"
+        android:enabled="true"
+        android:icon="@drawable/ic_delete"
+        android:title="Delete"
+        android:visible="true"
+        app:showAsAction="always|withText"
+        android:tint="@color/textPrimaryDark"/>
+</menu>

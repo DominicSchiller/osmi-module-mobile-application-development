@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="78dp"
+                android:layout_height="78dp"
+                android:descendantFocusability="blocksDescendants"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:id="@+id/contactInitialsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="AB"
+                    android:textAlignment="center"
+                    android:textColor="@color/textPrimaryDark"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/contactPhotoImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/contactNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary"
+                android:textSize="24dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height= "0.7dp"
+            android:background="@color/gray80"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/sendSMSSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_sms"
+                android:tint="@color/colorPrimary"/>
+            <View
+                android:layout_width="0.7dp"
+                android:layout_height= "match_parent"
+                android:background="@color/gray80"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="SMS Versenden an:"/>
+                <Button
+                    android:id="@+id/sendSMSButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:text="Phone number"
+                    android:elevation="0dp"
+                    android:textColor="@color/textPrimary"
+                    android:background="@android:color/transparent"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sendEmailSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/ic_email"
+                android:tint="@color/colorPrimary"/>
+            <View
+                android:layout_width="0.7dp"
+                android:layout_height= "match_parent"
+                android:background="@color/gray80"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="Email versenden an:"/>
+                <Button
+                    android:id="@+id/sendEmailButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:text="Email"
+                    android:elevation="0dp"
+                    android:textColor="@color/textPrimary"
+                    android:background="@android:color/transparent"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:textSize="16dp" />
+            </LinearLayout>
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height= "0.7dp"
+            android:background="@color/gray80"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/deleteContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:tint="@color/textPrimaryDark"
+            android:textColor="@color/textPrimaryDark"
+            android:textAllCaps="false"
+            android:elevation="0dp"
+            android:background="@color/error"
+            android:text="Kontakt entfernen" />
+    </LinearLayout>
+</LinearLayout>

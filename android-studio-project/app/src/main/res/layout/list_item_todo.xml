@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <CheckBox
+        android:id="@+id/list_item_isDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text=""
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:theme="@style/ListItemCheckbox" />
+
+    <TextView
+        android:id="@+id/list_item_title"
+        android:textColor="@color/textPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingRight="76dp"
+        android:layout_toEndOf="@id/list_item_isDone"
+        android:text="Eine Beschreibung"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/list_item_priority"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/list_item_title"
+        android:layout_marginRight="3dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:textAlignment="textEnd"
+        android:tint="@color/gray90"
+        app:srcCompat="@drawable/ic_priority_none" />
+
+    <ImageView
+        android:id="@+id/list_item_icon_dueDate"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignStart="@id/list_item_title"
+        android:layout_below="@id/list_item_title"
+        android:layout_marginTop="5dp"
+        android:tint="@color/textAccent"
+        app:srcCompat="@drawable/ic_time" />
+
+    <TextView
+        android:id="@+id/list_item_dueDate"
+        android:textColor="@color/textPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/list_item_icon_dueDate"
+        android:layout_marginLeft="25dp"
+        android:layout_alignTop="@id/list_item_icon_dueDate"
+        android:layout_marginTop="0dp"
+        android:text="09.06.2017"
+        android:textStyle="normal"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+</RelativeLayout>

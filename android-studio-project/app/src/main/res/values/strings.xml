@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MAD2DoPlanner</string>
+
+    <!-- Activity titles -->
+    <string name="activity_title_todo_overview">Überblick Todos</string>
+    <string name="activity_title_todo_details">Todo Details</string>
+    <string name="activity_title_todo_new">Neues Todo erstellen</string>
+    <string name="activity_title_todo_edit">Todo aktulaisieren</string>
+
+    <string name="todo_subtitle_description">Beschreibung</string>
+    <string name="todo_subtitle_dueDate">Fällig am</string>
+    <string name="todo_subtitle_priority">Dringlichkeit</string>
+    <string name="todo_subtitle_linked_contacts">Verknüpfte Kontakte</string>
+
+    <string name="title_contextMenu_choosePriority">Wählen Sie eine Dringlichkeit</string>
+    <string name="todo_priority_none">nicht wichtig</string>
+    <string name="todo_priority_low">sehr wichtig</string>
+
+    <string name="todo_is_done">erledigt</string>
+    <string name="todo_not_done">nicht erledigt</string>
+
+    <string name="delete_todo_confirm_title">Todo löschen</string>
+    <string name="delete_todo_confirm_msg">Soll dieses Todo item wirklich unwiederuflich gelöscht werden?</string>
+
+    <string name="sort_option_desc_prio_date">Sortieren nach Wichtigkeit+Datum</string>
+    <string name="sort_option_desc_date_prio">Sortieren nach Datum+Wichtigkeit</string>
+    <string name="option_hide_done_items">Erledigte Todos ausblenden</string>
+    <string name="title_activity_edit_todo_item">EditTodoItemActivity</string>
+
+    <string name="btn_title_login">Einloggen</string>
+
+    <string name="title_email">E-Mail</string>
+    <string name="title_password">Passwort</string>
+
+    <!-- Error Messages -->
+    <string name="err_server_not_reachable">Der Mad2Planner-Server ist aktuell leider nicht erreichbar. Angelegte Todos werden nachträglich synchronisiert.</string>
+    <string name="err_no_valid_email">Keine gültige Email-Adresse</string>
+    <string name="err_no_valid_password">Ihr Passwort besteht nicht aus 6 Zahlen.</string>
+    <string name="err_auth_failed">Ihre E-Mail oder Ihr Passwort sind nicht korrekt.\nBitte überprüfen Sie Ihre Eingaben.</string>
+
+    <!-- priority spinner attributes -->
+    <string-array name="priorities">
+        <item>@string/todo_priority_none</item>
+        <item>@string/todo_priority_low</item>
+    </string-array>
+</resources>
